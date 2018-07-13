@@ -86,11 +86,6 @@ model.compile(loss='categorical_crossentropy',
               optimizer=opt,
               metrics=['accuracy'])
 
-#x_train_list = x_train_list.astype('float32')
-#x_test_list = x_test_list.astype('float32')
-#x_train_list /= 255.
-#x_test_list /= 255.
-
 print('Using real-time data augmentation.')
 # This will do preprocessing and realtime data augmentation:
 datagen = ImageDataGenerator(
